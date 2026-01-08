@@ -657,8 +657,8 @@ header {
   display: inline-block;
   padding: 1rem 2.5rem;
   border-radius: 30px;
-  background: var(--cor-menu);
-  color: var(--cor-destaque);
+  background: var(--cor-destaque);
+  color: var(--cor-primaria);
   font-weight: bold;
   font-size: 1rem;
   text-decoration: none;
@@ -780,6 +780,78 @@ header {
   text-align: center;
   font-size: 0.85rem;
   opacity: 0.8;
+}
+
+/* ===============================
+   BANNER DE COOKIES
+=============================== */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 420px;
+  width: 90%;
+  background: rgba(248, 246, 246, 0.85);
+  color: var(--cor-menu);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.cookie-banner p {
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.cookie-banner button {
+  margin: 0 auto;
+  display: block;
+  padding: 10px 24px;
+  border-radius: 25px;
+  border: none;
+  background-color: #caa24d; /* ajuste à identidade visual */
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.cookie-banner button:hover {
+  opacity: 0.85;
+}
+
+/* ==============================
+   POLÍTICA DE PRIVACIDADE
+============================== */
+
+.privacy .about-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.privacy .about-text h3 {
+  text-align: justify;
+  color: var(--cor-destaque);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy .about-text p {
+  margin-bottom: 1.3rem;
+  line-height: 1.75;
+}
+
+.privacy .about-text ul {
+  margin: 1rem 0 1.5rem 1.2rem;
+}
+
+.privacy .about-text ul li {
+  margin-bottom: 0.6rem;
 }
 
 
@@ -911,6 +983,22 @@ header {
   .footer-column a {
     justify-content: center;
   }
+
+  .cookie-banner {
+    max-width: 320px;
+    padding: 14px 16px;
+    bottom: 15px;
+  }
+
+  .cookie-banner p {
+    font-size: 12.5px;
+    margin-bottom: 12px;
+  }
+
+  .cookie-banner button {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
 }
 
 /* ===============================
@@ -1029,13 +1117,33 @@ header {
   }
 
 
-/* Light mode toggle (kept for compatibility) */
-body.light {
-  --cor-primaria: #5a5a5a;
-  --cor-secundaria: #020202bf;
-  --cor-destaque: #ffffff;
-  --cor-menu: #5a5a5a82;
+  .cookie-banner {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 320px;
+    padding: 14px 16px;
+    bottom: 15px;
+  }
+
+  .cookie-banner p {
+    font-size: 11.5px;
+    margin-bottom: 12px;
+  }
+
+  .cookie-banner button {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+
+  .privacy .about-text {
+    padding: 0 0.5rem;
+    text-align: justify;
+  }
+
+  .privacy .about-text h3 {
+    font-size: 1.2rem;
+  }
 }
 
-}
+
 
