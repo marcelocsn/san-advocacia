@@ -10,6 +10,40 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./Inicio/style.css">
+    <!-- Google Analytics GA4 - TEMPLATE -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Substitua G-XXXXXXXXXX pelo Measurement ID real futuramente
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<!-- Fim Google Analytics -->
+
+<!-- Meta Pixel (Facebook / Instagram) - TEMPLATE -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  // Substituir futuramente pelo Pixel ID real
+  fbq('init', 'XXXXXXXXXXXXXXX');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"/>
+</noscript>
+<!-- Fim Meta Pixel -->
+
+
 </head>
 
 <body id="top">
